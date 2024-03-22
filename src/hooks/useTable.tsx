@@ -17,18 +17,18 @@ export const useTable = () => {
       case "name":
         return (
           <Link href={`/home/${folder.name}`}>
-            <div className="flex">
-              <HiOutlineFolder size={20} className="text-secondary mr-4" />
+            <div className="w-[203px] flex justify-start items-center">
+              <HiOutlineFolder size={23} className="text-secondary mr-4" />
               <p className="text-black text-sm">{folder.name}</p>
             </div>
           </Link>
         );
       case "video":
-        return <p>{folder.videos}</p>;
+        return <p className="text-sm">{folder.videos}</p>;
       case "highFolder":
-        return <p>{folder.highFolder}</p>;
+        return <p className="text-sm">{folder.highFolder}</p>;
       case "updatedDate":
-        return <p>{folder.updatedDate}</p>;
+        return <p className="text-sm">{folder.updatedDate}</p>;
       default:
         return cellValue;
     }

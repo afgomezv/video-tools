@@ -8,7 +8,7 @@ export const Root = () => {
   }
 
   return (
-    <main className="h-screen w-full bg-default p-4">
+    <main className="max-w-7xl mx-auto h-screen px-6 py-4">
       <Outlet />
     </main>
   );

@@ -11,7 +11,7 @@ import { GoSearch } from "react-icons/go";
 
 export const useFilter = () => {
   const [filterValue, setFilterValue] = useState("");
-  const [isActive, setIsactive] = useState(true);
+  const [isActive] = useState(true);
 
   const hasSearchFilter = Boolean(filterValue);
 
@@ -41,21 +41,21 @@ export const useFilter = () => {
 
   const topContent = useMemo(() => {
     return (
-      <div className="p-4">
-        <div className=" p-4 flex  flex-row justify-between">
+      <div>
+        <div className="flex flex-col items-center gap-2  sm:flex-row justify-between">
           <section>
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-4 sm:flex-row">
               <Button
-                className={`bg-transparent capitalize font-medium ${
+                className={`w-[150px] bg-transparent capitalize font-medium   ${
                   isActive && "border-b-2 border-secondary"
-                } `}
+                }  `}
                 radius="none"
                 startContent={<VscLibrary size={20} />}
               >
                 biblioteca
               </Button>
               <Button
-                className="bg-transparent capitalize font-medium hover:border-b-2  border-secondary"
+                className="w-[150px] bg-transparent capitalize font-medium hover:border-b-2  border-secondary  "
                 radius="none"
                 startContent={<BsTrash3 size={20} />}
               >
@@ -64,7 +64,7 @@ export const useFilter = () => {
             </div>
           </section>
           <section>
-            <div className="flex gap-4 ">
+            <div className="flex  flex-col gap-4 sm:flex-row">
               <Button
                 color="default"
                 radius="sm"
@@ -84,7 +84,7 @@ export const useFilter = () => {
             </div>
           </section>
         </div>
-        <div className="p-4 w-1/2">
+        <div className="py-10 w-full sm:w-1/2">
           <Input
             classNames={{
               label: "text-black/50",
@@ -117,7 +117,7 @@ export const useFilter = () => {
         </div>
       </div>
     );
-  }, [filterValue, onClear, onSearchChange]);
+  }, [filterValue, isActive, onClear, onSearchChange]);
 
   return { filteredItems, topContent };
 };

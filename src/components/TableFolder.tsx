@@ -25,21 +25,26 @@ export const TableFolder = () => {
       onSelectionChange={setSelectedKeys}
       checkboxesProps={{
         color: "secondary",
-        radius: "sm",
-        size: "md",
+        radius: "none",
+        size: "sm",
         classNames: {
-          base: "text-blue",
+          base: "pl-2 -mr-8",
+          icon: "",
+          wrapper: "border-1 border-slate-300",
         },
       }}
       classNames={{
-        th: ["bg-transparent", " border-b-2 px-4"],
-        td: ["border-b-2", "py-3.5"],
+        wrapper: "h-[870px] px-12 py-10 overflow-y-hidden",
+        table: "mb-16",
+        tr: "hover:bg-[#d8d8d8] focus:bg-blue-300",
+        th: ["bg-transparent", " border-b-2", "text-start"],
+        td: ["border-b-2", "py-2.5"],
       }}
     >
       <TableHeader columns={titles}>
         {(column) => (
           <TableColumn
-            className="bg-white text-sm text-black capitalize font-bold "
+            className="bg-white text-sm text-black  font-bold "
             key={column.key}
           >
             {column.label}

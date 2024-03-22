@@ -19,13 +19,16 @@ export const TableVideos = () => {
 
   const topContent = useMemo(() => {
     return (
-      <section className="flex pt-4 px-6 pb-10">
+      <section className="flex pt-4 pb-10">
         <div>
           <Link href="/home">
             <BsArrowLeftSquareFill size={32} className="text-secondary" />
           </Link>
         </div>
-        <div className="ml-3 text-xl font-semibold">Home/BeMaster</div>
+        <div className="flex justify-start text-xl ml-3">
+          <p className="capitalize">home/</p>
+          <p className="font-semibold">BeMaster</p>
+        </div>
       </section>
     );
   }, []);
@@ -39,21 +42,26 @@ export const TableVideos = () => {
       onSelectionChange={setSelectedKeys}
       checkboxesProps={{
         color: "secondary",
-        radius: "sm",
-        size: "md",
+        radius: "none",
+        size: "sm",
         classNames: {
-          base: "text-blue",
+          base: "pl-2 -mr-8",
+          icon: "",
+          wrapper: "border-1 border-slate-300",
         },
       }}
       classNames={{
-        th: ["bg-transparent", " border-b-2 px-4"],
-        td: ["border-b-2", "py-4"],
+        wrapper: "h-[870px] px-12 py-10 overflow-y-hidden ",
+        table: "mb-44",
+        tr: "hover:bg-[#d8d8d8] focus:bg-blue-300",
+        th: ["bg-transparent", " border-b-2", "text-start"],
+        td: ["border-b-2", "py-2.5"],
       }}
     >
       <TableHeader columns={titlesHeaders}>
         {(column) => (
           <TableColumn
-            className="bg-white text-sm text-black capitalize font-bold"
+            className="bg-white text-sm text-black  font-bold"
             key={column.key}
           >
             {column.label}

@@ -1,13 +1,13 @@
 export const titles = [
-  { key: "name", label: "nombre" },
-  { key: "video", label: "videos" },
-  { key: "highFolder", label: "tamaño" },
-  { key: "updatedDate", label: "última modificación" },
+  { key: "name", label: "Nombre" },
+  { key: "video", label: "Videos" },
+  { key: "highFolder", label: "Tamaño" },
+  { key: "updatedDate", label: "Última modificación" },
 ];
 
 export const titlesHeaders = [
-  { key: "name", label: "nombre" },
-  { key: "highFile", label: "tamaño" },
-  { key: "duration", label: "duración" },
-  { key: "updatedDate", label: "última modificación" },
+  { key: "name", label: "Nombre" },
+  { key: "highFile", label: "Tamaño" },
+  { key: "duration", label: "Duración" },
+  { key: "updatedDate", label: "Última modificación" },
 ];

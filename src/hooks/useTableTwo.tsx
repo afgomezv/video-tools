@@ -16,10 +16,10 @@ export const useTableTwo = () => {
       case "name":
         return (
           <div className="flex">
-            <div>
-              <LuPlayCircle size={20} className="text-secondary mr-4" />
+            <div className="flex justify-start items-center">
+              <LuPlayCircle size={23} className="text-secondary mr-4" />
             </div>
-            <p>{video.name}</p>
+            <p className="text-black text-sm">{video.name}</p>
           </div>
         );
       case "highFile":

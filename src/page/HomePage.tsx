@@ -2,7 +2,7 @@ import { TableFolder } from "../components";
 
 export function HomePage() {
   return (
-    <div className="w-full px-5">
+    <div className="w-11/12 h-[850px] pl-5">
       <TableFolder />
     </div>
   );

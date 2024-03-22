@@ -15,7 +15,9 @@ export const Sidebar = () => {
 
   return (
     <nav
-      className={`h-full  bg-white rounded-2xl p-3 ${isOpen ? "w-60" : "w-16"}`}
+      className={`h-auto border  bg-white rounded-2xl p-3   ${
+        isOpen ? "w-60" : "w-16"
+      } `}
     >
       <div
         className="w-full h-40 flex justify-center items-center cursor-pointer"
