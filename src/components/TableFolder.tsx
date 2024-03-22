@@ -34,8 +34,8 @@ export const TableFolder = () => {
         },
       }}
       classNames={{
-        wrapper: "h-[870px] px-12 py-10 overflow-y-hidden",
-        table: "mb-16",
+        wrapper: "px-12  overflow-y-hidden",
+        table: "mb-28",
         tr: "hover:bg-[#d8d8d8] focus:bg-blue-300",
         th: ["bg-transparent", " border-b-2", "text-start"],
         td: ["border-b-2", "py-2.5"],

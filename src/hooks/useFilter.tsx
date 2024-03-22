@@ -46,7 +46,7 @@ export const useFilter = () => {
           <section>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button
-                className={`w-[150px] bg-transparent capitalize font-medium   ${
+                className={` bg-transparent capitalize font-medium   ${
                   isActive && "border-b-2 border-secondary"
                 }  `}
                 radius="none"
@@ -55,7 +55,7 @@ export const useFilter = () => {
                 biblioteca
               </Button>
               <Button
-                className="w-[150px] bg-transparent capitalize font-medium hover:border-b-2  border-secondary  "
+                className=" bg-transparent capitalize font-medium hover:border-b-2  border-secondary  "
                 radius="none"
                 startContent={<BsTrash3 size={20} />}
               >
