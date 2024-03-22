@@ -2,6 +2,7 @@ import { Key, useCallback } from "react";
 
 import { titlesHeaders } from "../utils/titles";
 import { videos } from "../data";
+import { LuPlayCircle } from "react-icons/lu";
 
 export const useTableTwo = () => {
   type Video = (typeof videos)[0];
@@ -13,7 +14,14 @@ export const useTableTwo = () => {
       case "id":
         return <p>{video.id}</p>;
       case "name":
-        return <p>{video.name}</p>;
+        return (
+          <div className="flex">
+            <div>
+              <LuPlayCircle size={20} className="text-secondary mr-4" />
+            </div>
+            <p>{video.name}</p>
+          </div>
+        );
       case "highFile":
         return <p>{video.highFile}</p>;
       case "duration":

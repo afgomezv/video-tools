@@ -25,7 +25,7 @@ export const SidebarItem: FC<Props> = ({ text, icon }) => {
       <h2
         className={`${
           isOpen && "hidden"
-        } absolute left-48 bg-blue-200 font-semibold capitalize whitespace-pre text-gray-500 p-0 w-0 overflow-hidden rounded-md drop-shadow group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit `}
+        } absolute z-10 left-48 bg-blue-200 font-semibold capitalize whitespace-pre text-gray-500 p-0 w-0 overflow-hidden rounded-md drop-shadow group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit `}
       >
         {text}
       </h2>

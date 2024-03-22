@@ -2,7 +2,7 @@ import { Button, Slider } from "@nextui-org/react";
 
 export const PlannerComp = () => {
   return (
-    <div className="bg-gray-primary rounded-2xl p-2">
+    <div className="bg-default rounded-2xl p-2">
       <h3 className="text-base font-semibold capitalize">mi plan - plus</h3>
       <em className="text-xs">El uso se renueva el: 3-may-23</em>
       <div className="mt-4">
